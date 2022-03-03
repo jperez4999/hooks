@@ -1,16 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { MemoHook } from './06-memos/MemoHook';
 //import { FormWithCustomHook } from './02-useEffect/FormWithCustomHook';
 //import { MultipleCustomHook } from './03-examples/MultipleCustomHook';
 //import { CounterApp } from './01-useState/counterApp';
 //import { CounterWithCustomHook } from './01-useState/CounterWithCustomHook';
 //import { SimpleForm } from './02-useEffect/SimpleForm';
 //import { HooksApp } from './HooksApp';
-import { FocusScreen } from './04-useRef/FocusScreen';
+//import { FocusScreen } from './04-useRef/FocusScreen';
+//import { RealExampleRef } from './04-useRef/RealExampleRef';
+//import { Layout } from './05-useLayoutEffect/Layout';
+//import { Memorize } from './06-memos/Memorize';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <FocusScreen />,
+  <MemoHook />,
 
   document.getElementById('root')
 );
