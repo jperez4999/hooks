@@ -1,10 +1,14 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { useCounter } from '../hooks/useCounter';
 import '../02-useEffect/effect.css';
+import { heavyProcess } from '../helpers/heavyProcess';
 
 export const MemoHook = () => {
-  const { counter, increment } = useCounter(10);
+  const { counter, increment } = useCounter(1000);
   const [show, setShow] = useState(true);
+
+  const heavyProcessMemo = useMemo(() => heavyProcess(counter), [counter]);
+
   return (
     <div>
       <h1>MemoHook</h1>
@@ -12,6 +16,8 @@ export const MemoHook = () => {
         Counter : <small> {counter} </small>
       </h3>
       <hr />
+
+      {heavyProcessMemo}
       <button className='btn btn-primary' onClick={increment}>
         +1
       </button>

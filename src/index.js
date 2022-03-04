@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { MemoHook } from './06-memos/MemoHook';
+//import { CallbackHook } from './06-memos/CallbackHook';
+import { Padre } from './07-tarea-memo/Padre';
+//import { MemoHook } from './06-memos/MemoHook';
 //import { FormWithCustomHook } from './02-useEffect/FormWithCustomHook';
 //import { MultipleCustomHook } from './03-examples/MultipleCustomHook';
 //import { CounterApp } from './01-useState/counterApp';
@@ -14,7 +16,7 @@ import { MemoHook } from './06-memos/MemoHook';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <MemoHook />,
+  <Padre />,
 
   document.getElementById('root')
 );
