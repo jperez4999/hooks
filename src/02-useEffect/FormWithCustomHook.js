@@ -12,7 +12,6 @@ export const FormWithCustomHook = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    console.log(values);
   };
 
   return (
